@@ -64,8 +64,7 @@ Contact for all privacy questions: <a href="mailto:ben@gamechest.games">ben@game
 <ul>
 <li>GameChest keeps a private list of video games you discover. Your collection is visible only to you.</li>
 <li>No advertising, no tracking across apps or websites, no sale of your data, no analytics SDK of our own.</li>
-<li>The demo mode works without an account. Demo data stays on your device and is not sent to us.</li>
-<li>You can delete your account and your collection in the app at any time (Profile → Delete account).</li>
+<li>You can delete your account and your collection in the app at any time (Profile → Settings → Account &amp; legal → Delete account).</li>
 </ul>
 
 <h2>3. What we process, why, and on which legal basis</h2>
@@ -90,8 +89,11 @@ Purpose: providing the app. Legal basis: Art. 6(1)(b) GDPR.</p>
 sends this input to our server function. The function looks up matching games in public sources (a game store
 catalog, a game database, the public page or embed information of the shared link, and a barcode product
 database) and returns suggestions. It sends these sources only your input, never your name, email address or
-user ID. <strong>We do not store your search input</strong>, and our server logs record only the type of request,
-its duration and its status, never the search text, link, text or barcode. Only when you save a game do the
+user ID. <strong>We do not store your search input in a database or with your account.</strong> To answer the
+same search faster, the server function keeps the catalog results for a search term in its working memory for up to
+5 minutes, filed under that term and not linked to any account or user ID; after that, or when the function
+restarts, they are gone. Our server logs record only the type of request, its duration and its status, never the
+search text, link, text or barcode. Only when you save a game do the
 details you confirm become part of your collection (3.2). Legal basis: Art. 6(1)(b) GDPR.</p>
 
 <h3>3.4 Photos, camera and on-device text recognition</h3>
@@ -112,7 +114,8 @@ asked for).</p>
 <p>Purchases are made and paid through Apple's App Store or Google Play; we never receive your payment details. To unlock Plus
 and to restore purchases we use <strong>RevenueCat</strong>, which receives your purchase and subscription
 information (products, dates, status, transaction receipts) together with your GameChest user ID, or an anonymous ID in
-the demo. Legal basis: Art. 6(1)(b) GDPR.</p>
+the demo. Legal basis: Art. 6(1)(b) GDPR. Deleting your GameChest account does not cancel a running
+subscription; you cancel it in the App Store or Google Play.</p>
 
 <h3>3.7 Data stored only on your device</h3>
 <p>GameChest stores settings (for example sound and music, tour progress), demo data, discoveries you shared to GameChest
@@ -125,7 +128,9 @@ Legal basis: § 25(2) no. 2 TDDDG (strictly necessary) and Art. 6(1)(b) GDPR.</p
 <p>When the app connects to our servers, technical connection data (such as IP address, time and requested
 address) is processed by our hosting provider to operate and secure the service. Legal basis: Art. 6(1)(f) GDPR
 (security and stability). Retention follows the hosting provider's log retention:
-up to 7 days, after which the logs are deleted automatically.</p>
+up to 7 days, after which the logs are deleted automatically. The website gamechest.games is hosted on GitHub Pages
+(GitHub, Inc., USA); when you open it, GitHub receives your IP address and processes it in its server logs to deliver
+and secure the site (Art. 6(1)(f) GDPR).</p>
 
 <h3>3.9 Emails</h3>
 <p>We send emails only for your account (confirmation, password reset). No newsletters.</p>
@@ -150,9 +155,12 @@ We require our processors to protect your data at least to the standard describe
 your profile, your collection and your sign-in account from our servers immediately; it cannot be undone.</li>
 <li><strong>Sign in with Apple:</strong> when you delete your account we ask Apple to revoke GameChest's access. If
 this cannot be confirmed, the app tells you how to remove GameChest in your Apple Account settings.</li>
-<li><strong>Subscription records at RevenueCat:</strong> are not deleted automatically together with your account;
-contact us and we will request deletion. Apple keeps its own purchase records under its policies.</li>
-<li><strong>Search input:</strong> not stored (3.3).</li>
+<li><strong>Subscription records at RevenueCat:</strong> deleting your account in the app does not delete them.
+RevenueCat keeps your GameChest user ID with your purchase and subscription history until we delete that customer
+record. Write to us and we will delete it at RevenueCat. Apple and Google keep their own purchase records under
+their own policies.</li>
+<li><strong>Search input:</strong> not stored in a database or with your account; catalog results for a search term
+stay in the server function's working memory for up to 5 minutes (3.3).</li>
 <li><strong>Data on your device:</strong> until you sign out, delete the demo data or delete the app.</li>
 </ul>
 
@@ -182,8 +190,7 @@ Kontakt für alle Datenschutzfragen: <a href="mailto:ben@gamechest.games">ben@ga
 <ul>
 <li>GameChest führt eine private Liste der Videospiele, die du entdeckst. Deine Sammlung sieht nur du.</li>
 <li>Keine Werbung, kein Tracking über Apps oder Websites hinweg, kein Verkauf deiner Daten, kein eigenes Analyse-SDK.</li>
-<li>Die Demo funktioniert ohne Konto. Demo-Daten bleiben auf deinem Gerät und werden nicht an uns gesendet.</li>
-<li>Du kannst dein Konto und deine Sammlung jederzeit in der App löschen (Profil → Konto löschen).</li>
+<li>Du kannst dein Konto und deine Sammlung jederzeit in der App löschen (Profil → Einstellungen → Konto &amp; Recht → Konto löschen).</li>
 </ul>
 
 <h2>3. Was wir verarbeiten, wozu und auf welcher Rechtsgrundlage</h2>
@@ -209,8 +216,11 @@ oder einen Barcode scannst, sendet GameChest diese Eingabe an unsere Serverfunkt
 öffentlichen Quellen (einem Spiele-Shop-Katalog, einer Spieledatenbank, den öffentlichen Seiten- bzw.
 Einbettungsangaben des geteilten Links und einer Barcode-Produktdatenbank) und liefert Vorschläge zurück. An diese
 Quellen geht nur deine Eingabe, nie dein Name, deine E-Mail-Adresse oder deine Benutzer-ID.
-<strong>Deine Sucheingaben speichern wir nicht</strong>; unsere Server-Logs halten nur Art, Dauer und Status der
-Anfrage fest, nie den Suchtext, Link, Text oder Barcode. Erst wenn du ein Spiel speicherst, werden die von dir
+<strong>Deine Sucheingaben speichern wir nicht in einer Datenbank und nicht zu deinem Konto.</strong> Damit dieselbe
+Suche schneller beantwortet wird, hält die Serverfunktion die Katalogtreffer zu einem Suchbegriff bis zu 5 Minuten in
+ihrem Arbeitsspeicher, abgelegt unter diesem Begriff und ohne Bezug zu einem Konto oder einer Benutzer-ID; danach
+oder beim Neustart der Funktion sind sie weg. Unsere Server-Logs halten nur Art, Dauer und Status der Anfrage fest,
+nie den Suchtext, Link, Text oder Barcode. Erst wenn du ein Spiel speicherst, werden die von dir
 bestätigten Angaben Teil deiner Sammlung (3.2). Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO.</p>
 
 <h3>3.4 Fotos, Kamera und Texterkennung auf dem Gerät</h3>
@@ -231,7 +241,8 @@ angefragten Cover).</p>
 <p>Käufe laufen über Apples App Store oder Google Play und werden dort bezahlt; deine Zahlungsdaten erhalten wir nie. Zum
 Freischalten und Wiederherstellen von Plus nutzen wir <strong>RevenueCat</strong>. RevenueCat erhält deine Kauf- und
 Abo-Informationen (Produkte, Daten, Status, Transaktionsbelege) zusammen mit deiner GameChest-Benutzer-ID bzw. in der
-Demo einer anonymen Kennung. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO.</p>
+Demo einer anonymen Kennung. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO. Das Löschen deines GameChest-Kontos
+kündigt ein laufendes Abo nicht; kündigen kannst du es im App Store bzw. bei Google Play.</p>
 
 <h3>3.7 Nur auf deinem Gerät gespeicherte Daten</h3>
 <p>GameChest speichert Einstellungen (zum Beispiel Ton und Musik, Tour-Fortschritt), Demo-Daten, aus anderen Apps mit
@@ -244,7 +255,9 @@ anzubieten. Rechtsgrundlage: § 25 Abs. 2 Nr. 2 TDDDG (unbedingt erforderlich) u
 <p>Verbindet sich die App mit unseren Servern, verarbeitet unser Hosting-Anbieter technische Verbindungsdaten (etwa
 IP-Adresse, Zeitpunkt, aufgerufene Adresse), um den Dienst zu betreiben und abzusichern. Rechtsgrundlage: Art. 6
 Abs. 1 lit. f DSGVO (Sicherheit und Stabilität). Speicherdauer gemäß Log-Aufbewahrung des Anbieters:
-bis zu 7 Tage; danach werden die Protokolle automatisch gelöscht.</p>
+bis zu 7 Tage; danach werden die Protokolle automatisch gelöscht. Die Website gamechest.games wird über GitHub Pages
+(GitHub, Inc., USA) bereitgestellt; beim Aufruf erhält GitHub deine IP-Adresse und verarbeitet sie in seinen
+Server-Logs, um die Seite auszuliefern und abzusichern (Art. 6 Abs. 1 lit. f DSGVO).</p>
 
 <h3>3.9 E-Mails</h3>
 <p>Wir senden E-Mails nur zu deinem Konto (Bestätigung, Passwort zurücksetzen). Keine Newsletter.</p>
@@ -270,9 +283,12 @@ beschreibt.</p>
 Sammlung und Anmeldekonto sofort von unseren Servern; sie lässt sich nicht rückgängig machen.</li>
 <li><strong>„Mit Apple anmelden“:</strong> Beim Löschen bitten wir Apple, den Zugriff von GameChest zu widerrufen. Lässt
 sich das nicht bestätigen, zeigt dir die App, wie du GameChest in den Einstellungen deines Apple Accounts entfernst.</li>
-<li><strong>Abo-Daten bei RevenueCat:</strong> werden nicht automatisch mit dem Konto gelöscht; schreib uns, dann
-veranlassen wir die Löschung. Apple bewahrt eigene Kaufbelege nach eigenen Regeln auf.</li>
-<li><strong>Sucheingaben:</strong> werden nicht gespeichert (3.3).</li>
+<li><strong>Abo-Daten bei RevenueCat:</strong> das Löschen deines Kontos in der App löscht sie nicht. RevenueCat
+bewahrt deine GameChest-Benutzer-ID mit deinem Kauf- und Abo-Verlauf auf, bis wir diesen Kundendatensatz löschen.
+Schreib uns, dann löschen wir ihn bei RevenueCat. Apple und Google bewahren eigene Kaufbelege nach eigenen Regeln
+auf.</li>
+<li><strong>Sucheingaben:</strong> nicht in einer Datenbank und nicht zu deinem Konto gespeichert; Katalogtreffer zu
+einem Suchbegriff bleiben bis zu 5 Minuten im Arbeitsspeicher der Serverfunktion (3.3).</li>
 <li><strong>Daten auf deinem Gerät:</strong> bis du dich abmeldest, die Demo-Daten löschst oder die App löschst.</li>
 </ul>
 
