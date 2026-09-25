@@ -141,27 +141,34 @@ and secure the site (Art. 6(1)(f) GDPR).</p>
 <p>We send emails only for your account (confirmation, password reset). No newsletters.</p>
 
 <h3>3.10 Till, the game advisor (AI)</h3>
-<p>Till answers your questions with the help of the AI model <strong>Gemini</strong> from <strong>Google</strong>
-(Gemini API; contracting party Google Cloud EMEA Limited, Ireland; processing may also take place at Google in the USA
-and other countries). Only after you agree in the chat do we send, through our server, your message, the last
-messages of the current conversation, the titles, platforms and statuses of the games in your chest and the
-platforms and genres from your profile to Google, together with game data from the IGDB catalog. We do not send your
-name, email address, notes or ratings. We use the paid Gemini API: under Google's Gemini API terms for paid services,
-Google does not use these prompts and answers to improve its products (including training its models), processes
-them as our processor under the Google Cloud Data Processing Addendum and keeps them only for a limited time to
-detect abuse of its services. To keep the daily answer limit we store a counter per day (user ID, date, number of
-answers); a daily job deletes counters older than 31 days. The conversation itself is not stored on our servers. Legal basis: Art. 6(1)(a) GDPR
-(your consent in the chat) and Art. 6(1)(b) GDPR. You can withdraw your consent at any time with effect for the future
-(Art. 7(3) GDPR): in the app under Settings → AI advisor (Till): Consent → Withdraw consent. From then on nothing is
-sent to Google, and Till asks for your consent again the next time you open him. Withdrawing does not affect the
-lawfulness of processing before the withdrawal. In the demo, Till answers on your device without AI.</p>
+<p>Till is an AI, not a person. He answers with the AI model <strong>Claude</strong> from <strong>Anthropic</strong>
+(Claude API; contracting party Anthropic Ireland, Limited, Ireland; Anthropic may process the data in the USA and
+other countries and stores it in the USA). Only after you agree in the chat do we send, through our server, your
+message, the last messages of the current conversation, the titles, platforms and statuses of the games in your chest
+and the platforms and genres from your profile to Anthropic, together with game data from the IGDB catalog. We do not
+send your name, email address, notes or ratings. Under Anthropic's Commercial Terms, Anthropic does not train its
+models on this data. Anthropic processes it as our processor under its Data Processing Addendum, which includes the EU
+Standard Contractual Clauses, and deletes it within 30 days. If a message is flagged for violating Anthropic's Usage
+Policy, Anthropic may keep it for up to 2 years and the safety classification for up to 7 years. AI answers can be
+wrong or out of date. Please check facts, prices and age ratings before you rely on them.</p>
+<p><strong>Using Till safely:</strong> Till only talks about games and is instructed to keep answers suitable for
+players aged 13 and over. Do not share personal details with him, such as your real name, address, school or phone
+number. If an answer seems wrong or inappropriate, long-press it in the chat and choose &ldquo;Report answer&rdquo;.
+We then store the reported answer (only Till's answer, not your messages) with your user ID and the time for up to
+180 days to check it. To keep the daily answer limit we store a counter per day (user ID, date, number of answers);
+a daily job deletes counters older than 31 days. The conversation itself is not stored on our servers. Legal basis: Art. 6(1)(a) GDPR (your consent
+in the chat) and Art. 6(1)(b) GDPR; for reports also Art. 6(1)(f) GDPR (our legitimate interest in keeping Till safe).
+You can withdraw your consent at any time with effect for the future (Art. 7(3) GDPR): in the app under Settings →
+AI advisor (Till): Consent → Withdraw consent. From then on nothing is sent to Anthropic, and Till asks for your
+consent again the next time you open him. Withdrawing does not affect the lawfulness of processing before the
+withdrawal. In the demo, Till answers on your device without AI.</p>
 
 <h3>3.11 Web app (gamechest.games/app)</h3>
 <p>GameChest can also be used in the browser at gamechest.games/app. The web app is hosted on <strong>GitHub
 Pages</strong> (GitHub, Inc., a Microsoft company, USA). When you open it, GitHub receives your IP address and processes
 it together with the time and the requested address in its server logs to deliver and secure the site; legal basis:
 Art. 6(1)(f) GDPR. The web app uses the same services as the app (Supabase for your account and collection, the game
-catalogs for search and covers, Google Gemini for Till after your consent), as described above. It offers no purchases,
+catalogs for search and covers, Anthropic Claude for Till after your consent), as described above. It offers no purchases,
 no sharing from other apps, no barcode scanning and no photos, so RevenueCat, the store payment services and ML Kit are
 not involved. Your sign-in (session token) and your settings are kept in your browser's local storage; this is strictly
 necessary to keep you signed in and to provide the service you requested (§ 25(2) no. 2 TDDDG). Signing out removes
@@ -175,7 +182,7 @@ transmits your IP address to Google; legal basis: Art. 6(1)(f) GDPR (displaying 
 <tr><th>Recipient</th><th>Role</th><th>Data</th></tr>
 <tr><td>Supabase, Inc. (servers in the EU, AWS region eu-west-1, Ireland)</td><td>Processor: hosting, database, sign-in, server functions, account emails</td><td>Account, collection, profile, server logs</td></tr>
 <tr><td>RevenueCat, Inc. (USA)</td><td>Processor: subscription management</td><td>User ID, purchase and subscription data</td></tr>
-<tr><td>Google Cloud EMEA Limited (Ireland) / Google LLC (USA), Gemini API</td><td>Processor: AI answers for Till (3.10), only after your consent</td><td>Chat messages, chest titles/platforms/statuses, profile platforms and genres</td></tr>
+<tr><td>Anthropic Ireland, Limited (Ireland) / Anthropic, PBC (USA), Claude API</td><td>Processor: AI answers for Till (3.10), only after your consent</td><td>Chat messages, chest titles/platforms/statuses, profile platforms and genres</td></tr>
 <tr><td>Apple (Apple Inc. / Apple Distribution International Ltd.)</td><td>App Store payments under Apple's own privacy policy</td><td>Purchase data</td></tr>
 <tr><td>Google (Google LLC / Google Ireland Ltd.)</td><td>ML Kit metrics (3.4); Google Play payments on Android</td><td>Technical metrics; purchase data on Android</td></tr>
 <tr><td>GitHub, Inc. (Microsoft, USA), GitHub Pages</td><td>Hosting of the website and the web app (3.8, 3.11)</td><td>IP address, server logs</td></tr>
@@ -183,6 +190,7 @@ transmits your IP address to Google; legal basis: Art. 6(1)(f) GDPR (displaying 
 </table></div>
 <p>Where data is transferred to countries outside the EU/EEA (in particular the USA), this takes place on the
 basis of the EU-US Data Privacy Framework where the recipient is certified under it, and otherwise the EU Standard Contractual Clauses (Art. 46(2)(c) GDPR).
+For Anthropic, the transfer is based on the EU Standard Contractual Clauses in Anthropic's Data Processing Addendum.
 We require our processors to protect your data at least to the standard described in this policy.</p>
 
 <h2>5. How long we keep data</h2>
@@ -199,6 +207,8 @@ own purchase records under their own policies.</li>
 immediately when you delete your account (3.10).</li>
 <li><strong>Search input:</strong> not stored in a database or with your account; the search term and its catalog
 results stay in the server function's working memory for at most 5 minutes and are then deleted (3.3).</li>
+<li><strong>Till's reported answers:</strong> up to 180 days, deleted earlier with your account. Anthropic deletes
+chat data within 30 days (3.10).</li>
 <li><strong>Data on your device:</strong> until you sign out, delete the demo data or delete the app.</li>
 </ul>
 
@@ -210,7 +220,10 @@ You also have the right to lodge a complaint with a supervisory authority (Art. 
 the Hamburg Commissioner for Data Protection and Freedom of Information (HmbBfDI), Ludwig-Erhard-Str. 22, 20459 Hamburg, Germany.</p>
 
 <h2>7. Children</h2>
-<p>GameChest is not directed at children under 13. See the <a href="terms.html#en">Terms</a> for the minimum age.</p>
+<p>GameChest is not directed at children under 13. See the <a href="terms.html#en">Terms</a> for the minimum age.
+Till, our AI advisor, is built for players aged 13 and over: he only talks about games, is instructed to keep answers
+suitable for teens, does not ask for personal details and can be reported from the chat. We comply with the GDPR and
+applicable child-protection law; Anthropic's child-safety requirements for products used by teens apply to Till.</p>
 
 <h2>8. Changes</h2>
 <p>We will update this policy when the app changes. The date above shows the current version.</p>
@@ -307,21 +320,29 @@ Server-Logs, um die Seite auszuliefern und abzusichern (Art. 6 Abs. 1 lit. f DSG
 <p>Wir senden E-Mails nur zu deinem Konto (Bestätigung, Passwort zurücksetzen). Keine Newsletter.</p>
 
 <h3>3.10 Till, der Spieleberater (KI)</h3>
-<p>Till beantwortet deine Fragen mit Hilfe des KI-Modells <strong>Gemini</strong> von <strong>Google</strong>
-(Gemini API; Vertragspartner Google Cloud EMEA Limited, Irland; die Verarbeitung kann auch bei Google in den USA und
-anderen Ländern stattfinden). Erst nachdem du im Chat zugestimmt hast, übermitteln wir über unseren Server deine
-Nachricht, die letzten Nachrichten des laufenden Gesprächs, Titel, Plattform und Status der Spiele in deiner Truhe
-sowie Plattformen und Genres aus deinem Profil an Google, zusammen mit Spieldaten aus dem IGDB-Katalog. Name,
-E-Mail-Adresse, Notizen und Bewertungen senden wir nicht. Wir nutzen die kostenpflichtige Gemini API: Nach den
-Gemini-API-Bedingungen für kostenpflichtige Dienste nutzt Google diese Anfragen und Antworten nicht zur Verbesserung
-seiner Produkte (auch nicht zum Training seiner Modelle), verarbeitet sie als unser Auftragsverarbeiter nach dem
-Google-Cloud-Auftragsverarbeitungszusatz und speichert sie nur begrenzte Zeit, um Missbrauch seiner Dienste zu
-erkennen. Für das tägliche Antwortkontingent speichern wir je Tag einen Zähler (Benutzer-ID, Datum, Anzahl); ein
-täglicher Job löscht Zähler, die älter als 31 Tage sind. Das Gespräch selbst speichern wir nicht auf unseren Servern.
-Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (deine Einwilligung im Chat) und Art. 6 Abs. 1 lit. b DSGVO. Deine
-Einwilligung kannst du jederzeit mit Wirkung für die Zukunft widerrufen (Art. 7 Abs. 3 DSGVO): in der App unter
-Settings → AI advisor (Till): Consent → Withdraw consent. Danach wird nichts mehr an Google übermittelt, und Till fragt
-beim nächsten Öffnen erneut. Die Rechtmäßigkeit der Verarbeitung bis zum Widerruf bleibt unberührt. In der Demo
+<p>Till ist eine KI, kein Mensch. Er antwortet mit dem KI-Modell <strong>Claude</strong> von <strong>Anthropic</strong>
+(Claude API; Vertragspartner Anthropic Ireland, Limited, Irland; Anthropic kann die Daten in den USA und anderen
+Ländern verarbeiten und speichert sie in den USA). Erst nachdem du im Chat zugestimmt hast, übermitteln wir über
+unseren Server deine Nachricht, die letzten Nachrichten des laufenden Gesprächs, Titel, Plattform und Status der Spiele
+in deiner Truhe sowie Plattformen und Genres aus deinem Profil an Anthropic, zusammen mit Spieldaten aus dem
+IGDB-Katalog. Name, E-Mail-Adresse, Notizen und Bewertungen senden wir nicht. Nach Anthropics Geschäftsbedingungen
+(Commercial Terms) trainiert Anthropic seine Modelle nicht mit diesen Daten. Anthropic verarbeitet sie als unser
+Auftragsverarbeiter nach seinem Auftragsverarbeitungszusatz (Data Processing Addendum), der die
+EU-Standardvertragsklauseln enthält, und löscht sie binnen 30 Tagen. Wird eine Nachricht wegen eines Verstoßes gegen
+Anthropics Nutzungsrichtlinie markiert, kann Anthropic sie bis zu 2 Jahre und die Sicherheitseinstufung bis zu 7 Jahre
+aufbewahren. KI-Antworten können falsch oder veraltet sein. Prüf Fakten, Preise und Altersfreigaben, bevor du dich
+darauf verlässt.</p>
+<p><strong>Till sicher nutzen:</strong> Till spricht nur über Spiele und ist angewiesen, seine Antworten für Spielerinnen
+und Spieler ab 13 Jahren passend zu halten. Teile ihm keine persönlichen Daten mit, etwa deinen echten Namen, deine
+Adresse, Schule oder Telefonnummer. Wirkt eine Antwort falsch oder unangemessen, halte sie im Chat gedrückt und wähle
+„Antwort melden“. Wir speichern dann die gemeldete Antwort (nur Tills Antwort, nicht deine Nachrichten) mit deiner
+Benutzer-ID und dem Zeitpunkt für bis zu 180 Tage, um sie zu prüfen. Für das tägliche Antwortkontingent speichern wir
+je Tag einen Zähler (Benutzer-ID, Datum, Anzahl); ein täglicher Job löscht Zähler, die älter als 31 Tage sind. Das Gespräch selbst speichern wir nicht auf
+unseren Servern. Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (deine Einwilligung im Chat) und Art. 6 Abs. 1 lit. b
+DSGVO; für Meldungen zusätzlich Art. 6 Abs. 1 lit. f DSGVO (unser berechtigtes Interesse, Till sicher zu halten).
+Deine Einwilligung kannst du jederzeit mit Wirkung für die Zukunft widerrufen (Art. 7 Abs. 3 DSGVO): in der App unter
+Settings → AI advisor (Till): Consent → Withdraw consent. Danach wird nichts mehr an Anthropic übermittelt, und Till
+fragt beim nächsten Öffnen erneut. Die Rechtmäßigkeit der Verarbeitung bis zum Widerruf bleibt unberührt. In der Demo
 antwortet Till ohne KI auf deinem Gerät.</p>
 
 <h3>3.11 Web-App (gamechest.games/app)</h3>
@@ -329,7 +350,7 @@ antwortet Till ohne KI auf deinem Gerät.</p>
 Pages</strong> (GitHub, Inc., ein Unternehmen von Microsoft, USA) bereitgestellt. Beim Aufruf erhält GitHub deine
 IP-Adresse und verarbeitet sie zusammen mit Zeitpunkt und aufgerufener Adresse in seinen Server-Logs, um die Seite
 auszuliefern und abzusichern; Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO. Die Web-App nutzt dieselben Dienste wie die
-App (Supabase für Konto und Sammlung, die Spielekataloge für Suche und Cover, Google Gemini für Till nach deiner
+App (Supabase für Konto und Sammlung, die Spielekataloge für Suche und Cover, Anthropic Claude für Till nach deiner
 Einwilligung), wie oben beschrieben. Sie bietet keine Käufe, kein Teilen aus anderen Apps, keinen Barcode-Scan und keine
 Fotos; RevenueCat, die Zahlungsdienste der Stores und ML Kit sind deshalb nicht beteiligt. Deine Anmeldung
 (Sitzungs-Token) und deine Einstellungen werden im lokalen Speicher deines Browsers gehalten; das ist unbedingt
@@ -345,7 +366,7 @@ Abs. 1 lit. f DSGVO (korrekte Darstellung von Text).</p>
 <tr><th>Empfänger</th><th>Rolle</th><th>Daten</th></tr>
 <tr><td>Supabase, Inc. (Server in der EU, AWS-Region eu-west-1, Irland)</td><td>Auftragsverarbeiter: Hosting, Datenbank, Anmeldung, Serverfunktionen, Konto-E-Mails</td><td>Konto, Sammlung, Profil, Server-Logs</td></tr>
 <tr><td>RevenueCat, Inc. (USA)</td><td>Auftragsverarbeiter: Abo-Verwaltung</td><td>Benutzer-ID, Kauf- und Abodaten</td></tr>
-<tr><td>Google Cloud EMEA Limited (Irland) / Google LLC (USA), Gemini API</td><td>Auftragsverarbeiter: KI-Antworten für Till (3.10), nur nach deiner Einwilligung</td><td>Chat-Nachrichten, Titel/Plattform/Status der Truhenspiele, Profil-Plattformen und -Genres</td></tr>
+<tr><td>Anthropic Ireland, Limited (Irland) / Anthropic, PBC (USA), Claude API</td><td>Auftragsverarbeiter: KI-Antworten für Till (3.10), nur nach deiner Einwilligung</td><td>Chat-Nachrichten, Titel/Plattform/Status der Truhenspiele, Profil-Plattformen und -Genres</td></tr>
 <tr><td>Apple (Apple Inc. / Apple Distribution International Ltd.)</td><td>App-Store-Zahlung nach Apples eigener Datenschutzrichtlinie</td><td>Kaufdaten</td></tr>
 <tr><td>Google (Google LLC / Google Ireland Ltd.)</td><td>ML-Kit-Messwerte (3.4); Google-Play-Zahlungen unter Android</td><td>Technische Messwerte; Kaufdaten unter Android</td></tr>
 <tr><td>GitHub, Inc. (Microsoft, USA), GitHub Pages</td><td>Hosting der Website und der Web-App (3.8, 3.11)</td><td>IP-Adresse, Server-Logs</td></tr>
@@ -353,6 +374,7 @@ Abs. 1 lit. f DSGVO (korrekte Darstellung von Text).</p>
 </table></div>
 <p>Soweit Daten in Länder außerhalb der EU/des EWR (insbesondere die USA) übermittelt werden, geschieht das auf
 Grundlage des EU-US Data Privacy Framework, soweit der Empfänger danach zertifiziert ist, und im Übrigen der EU-Standardvertragsklauseln (Art. 46 Abs. 2 lit. c DSGVO).
+Für Anthropic stützt sich die Übermittlung auf die EU-Standardvertragsklauseln in Anthropics Auftragsverarbeitungszusatz.
 Wir verpflichten unsere Auftragsverarbeiter, deine Daten mindestens so zu schützen, wie es diese Erklärung
 beschreibt.</p>
 
@@ -370,6 +392,8 @@ Kaufbelege nach eigenen Regeln auf.</li>
 wenn du dein Konto löschst (3.10).</li>
 <li><strong>Sucheingaben:</strong> nicht in einer Datenbank und nicht zu deinem Konto gespeichert; Suchbegriff und
 Katalogtreffer bleiben höchstens 5 Minuten im Arbeitsspeicher der Serverfunktion und werden dann gelöscht (3.3).</li>
+<li><strong>Von dir gemeldete Till-Antworten:</strong> bis zu 180 Tage, mit deinem Konto früher gelöscht. Anthropic
+löscht Chatdaten binnen 30 Tagen (3.10).</li>
 <li><strong>Daten auf deinem Gerät:</strong> bis du dich abmeldest, die Demo-Daten löschst oder die App löschst.</li>
 </ul>
 
@@ -382,7 +406,10 @@ beschweren (Art. 77 DSGVO), zum Beispiel bei der Hamburgische Beauftragte für D
 
 <h2>7. Kinder</h2>
 <p>GameChest richtet sich nicht an Kinder unter 13 Jahren. Das Mindestalter steht in den
-<a href="terms.html#de">Nutzungsbedingungen</a>.</p>
+<a href="terms.html#de">Nutzungsbedingungen</a>. Till, unser KI-Berater, ist für Spielerinnen und Spieler ab 13 Jahren
+gebaut: Er spricht nur über Spiele, ist angewiesen, seine Antworten für Jugendliche passend zu halten, fragt nicht nach
+persönlichen Daten und lässt sich im Chat melden. Wir halten die DSGVO und das geltende Jugendschutzrecht ein; für Till
+gelten außerdem Anthropics Kinderschutz-Anforderungen für Produkte, die Jugendliche nutzen.</p>
 
 <h2>8. Änderungen</h2>
 <p>Wir passen diese Erklärung an, wenn sich die App ändert. Das Datum oben zeigt die aktuelle Fassung.</p>
