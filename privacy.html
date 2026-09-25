@@ -54,7 +54,7 @@ summary{cursor:pointer;font-weight:700;color:var(--off)}
 
 <section class="lang-block" id="en" lang="en">
 <h1>Privacy Policy</h1>
-<p class="meta">GameChest for iPhone and Android · Last updated September 24, 2026</p>
+<p class="meta">GameChest for iPhone and Android · Last updated September 25, 2026</p>
 
 <h2>1. Who is responsible</h2>
 <p>Controller within the meaning of the EU General Data Protection Regulation (GDPR): Benneth Müller, Benneth Müller Digital Solutions &amp; Education, Borgfelder Str. 16, 20537 Hamburg, Germany, <a href="mailto:ben@gamechest.games">ben@gamechest.games</a>.
@@ -72,9 +72,8 @@ Contact for all privacy questions: <a href="mailto:ben@gamechest.games">ben@game
 <h3>3.1 Your account</h3>
 <p>When you create an account we process your <strong>email address</strong>, your <strong>password</strong>
 (stored by our hosting provider only in hashed form), an internal <strong>user ID</strong> and the
-<strong>display name</strong> you enter. If you sign in with Apple, Google or Twitch, that provider sends us your
-email address and, depending on the provider and your choice, your name; with Sign in with Apple you can hide your
-real email address. Purpose: creating and securing your account and signing you in.
+<strong>display name</strong> you enter. You sign in with your email address and password; GameChest offers no
+sign-in through Apple, Google or other third-party accounts. Purpose: creating and securing your account and signing you in.
 Legal basis: Art. 6(1)(b) GDPR (performance of the contract).</p>
 
 <h3>3.2 Your collection and profile</h3>
@@ -90,10 +89,14 @@ sends this input to our server function. The function looks up matching games in
 catalog, a game database, the public page or embed information of the shared link, and a barcode product
 database) and returns suggestions. It sends these sources only your input, never your name, email address or
 user ID. <strong>We do not store your search input in a database or with your account.</strong> To answer the
-same search faster, the server function keeps the catalog results for a search term in its working memory for up to
-5 minutes, filed under that term and not linked to any account or user ID; after that, or when the function
-restarts, they are gone. Our server logs record only the type of request, its duration and its status, never the
-search text, link, text or barcode. Only when you save a game do the
+same search faster, the server function keeps the search term (or the title it derived from your link or text)
+together with the catalog results in its working memory for at most 5 minutes, not linked to any account or user ID.
+Expired entries are deleted automatically, the memory holds only a limited number of recent terms, and a restart of
+the function clears it completely. Our server logs record only the type of request, its duration and its status, never the
+search text, link, text or barcode. The search behind the magnifying glass starts while you type (after a short pause
+and from two characters on), so a search term is sent before you press Enter; a pasted link is only sent when you
+confirm it. The search field in your Chest tab only filters the games you already saved; this happens on your device
+and sends nothing. Only when you save a game do the
 details you confirm become part of your collection (3.2). Legal basis: Art. 6(1)(b) GDPR.</p>
 
 <h3>3.4 Photos, camera and on-device text recognition</h3>
@@ -114,13 +117,15 @@ asked for).</p>
 <p>Purchases are made and paid through Apple's App Store or Google Play; we never receive your payment details. To unlock Plus
 and to restore purchases we use <strong>RevenueCat</strong>, which receives your purchase and subscription
 information (products, dates, status, transaction receipts) together with your GameChest user ID, or an anonymous ID in
-the demo. Legal basis: Art. 6(1)(b) GDPR. Deleting your GameChest account does not cancel a running
+the demo. Legal basis: Art. 6(1)(b) GDPR. We also use RevenueCat's dashboard to evaluate subscriptions in
+aggregate (for example number of subscribers, trials, renewals and revenue); legal basis: Art. 6(1)(f) GDPR, our
+legitimate interest in running the subscription business. Deleting your GameChest account does not cancel a running
 subscription; you cancel it in the App Store or Google Play.</p>
 
 <h3>3.7 Data stored only on your device</h3>
 <p>GameChest stores settings (for example sound and music, tour progress), demo data, discoveries you shared to GameChest
-from other apps (until you review or discard them) and, after Sign in with Apple, a short-lived authorization code
-for account deletion. None of this leaves your device unless you actively use the related feature. When you paste a
+from other apps (links, text or screenshots, through the share extension on iPhone or the share menu on Android;
+kept until you review or discard them, a shared screenshot is read on your device and never uploaded). None of this leaves your device unless you actively use the related feature. When you paste a
 link, GameChest checks the clipboard only while the empty search field is active in order to offer "Paste link".
 Legal basis: § 25(2) no. 2 TDDDG (strictly necessary) and Art. 6(1)(b) GDPR.</p>
 
@@ -135,14 +140,30 @@ and secure the site (Art. 6(1)(f) GDPR).</p>
 <h3>3.9 Emails</h3>
 <p>We send emails only for your account (confirmation, password reset). No newsletters.</p>
 
+<h3>3.10 Till, the game advisor (AI)</h3>
+<p>Till answers your questions with the help of the AI model <strong>Gemini</strong> from <strong>Google</strong>
+(Gemini API; contracting party Google Cloud EMEA Limited, Ireland; processing may also take place at Google in the USA
+and other countries). Only after you agree in the chat do we send, through our server, your message, the last
+messages of the current conversation, the titles, platforms and statuses of the games in your chest and the
+platforms and genres from your profile to Google, together with game data from the IGDB catalog. We do not send your
+name, email address, notes or ratings. We use the paid Gemini API: under Google's Gemini API terms for paid services,
+Google does not use these prompts and answers to improve its products (including training its models), processes
+them as our processor under the Google Cloud Data Processing Addendum and keeps them only for a limited time to
+detect abuse of its services. To keep the daily answer limit we store a counter per day (user ID, date, number of
+answers); a daily job deletes counters older than 31 days. The conversation itself is not stored on our servers. Legal basis: Art. 6(1)(a) GDPR
+(your consent in the chat) and Art. 6(1)(b) GDPR. You can withdraw your consent at any time with effect for the future
+(Art. 7(3) GDPR): in the app under Settings → AI advisor (Till): Consent → Withdraw consent. From then on nothing is
+sent to Google, and Till asks for your consent again the next time you open him. Withdrawing does not affect the
+lawfulness of processing before the withdrawal. In the demo, Till answers on your device without AI.</p>
+
 <h2>4. Service providers and recipients</h2>
 <div class="scroll"><table>
 <tr><th>Recipient</th><th>Role</th><th>Data</th></tr>
 <tr><td>Supabase, Inc. (servers in the EU, AWS region eu-west-1, Ireland)</td><td>Processor: hosting, database, sign-in, server functions, account emails</td><td>Account, collection, profile, server logs</td></tr>
 <tr><td>RevenueCat, Inc. (USA)</td><td>Processor: subscription management</td><td>User ID, purchase and subscription data</td></tr>
-<tr><td>Apple (Apple Inc. / Apple Distribution International Ltd.)</td><td>App Store payments and Sign in with Apple under Apple's own privacy policy</td><td>Purchase and sign-in data</td></tr>
-<tr><td>Google (Google LLC / Google Ireland Ltd.)</td><td>ML Kit metrics (3.4); Google Play payments on Android; Google sign-in if you choose it</td><td>Technical metrics; purchase data on Android; sign-in data</td></tr>
-<tr><td>Twitch Interactive, Inc.</td><td>Twitch sign-in if you choose it</td><td>Sign-in data</td></tr>
+<tr><td>Google Cloud EMEA Limited (Ireland) / Google LLC (USA), Gemini API</td><td>Processor: AI answers for Till (3.10), only after your consent</td><td>Chat messages, chest titles/platforms/statuses, profile platforms and genres</td></tr>
+<tr><td>Apple (Apple Inc. / Apple Distribution International Ltd.)</td><td>App Store payments under Apple's own privacy policy</td><td>Purchase data</td></tr>
+<tr><td>Google (Google LLC / Google Ireland Ltd.)</td><td>ML Kit metrics (3.4); Google Play payments on Android</td><td>Technical metrics; purchase data on Android</td></tr>
 <tr><td>Public game catalogs, link and barcode sources</td><td>Receive your search input without your identity (3.3); image servers receive your IP address (3.5)</td><td>Search input; IP address</td></tr>
 </table></div>
 <p>Where data is transferred to countries outside the EU/EEA (in particular the USA), this takes place on the
@@ -153,14 +174,16 @@ We require our processors to protect your data at least to the standard describe
 <ul>
 <li><strong>Account, collection and profile:</strong> until you delete your account. Deletion in the app removes
 your profile, your collection and your sign-in account from our servers immediately; it cannot be undone.</li>
-<li><strong>Sign in with Apple:</strong> when you delete your account we ask Apple to revoke GameChest's access. If
-this cannot be confirmed, the app tells you how to remove GameChest in your Apple Account settings.</li>
-<li><strong>Subscription records at RevenueCat:</strong> deleting your account in the app does not delete them.
-RevenueCat keeps your GameChest user ID with your purchase and subscription history until we delete that customer
-record. Write to us and we will delete it at RevenueCat. Apple and Google keep their own purchase records under
-their own policies.</li>
-<li><strong>Search input:</strong> not stored in a database or with your account; catalog results for a search term
-stay in the server function's working memory for up to 5 minutes (3.3).</li>
+<li><strong>Subscription records at RevenueCat:</strong> when you delete your account in the app, our server asks
+RevenueCat to delete your RevenueCat customer record (your GameChest user ID with its purchase and subscription
+history). This only works when our server holds the RevenueCat access key needed for it and RevenueCat answers. If the
+request is not made or fails, your account is still deleted, but the record stays at RevenueCat until we delete it
+there by hand; write to us and we will do so within 30 days. Deleting the account does not cancel a running subscription (3.6). Apple and Google keep their
+own purchase records under their own policies.</li>
+<li><strong>Till's daily answer counter:</strong> deleted by a daily job once it is older than 31 days, and
+immediately when you delete your account (3.10).</li>
+<li><strong>Search input:</strong> not stored in a database or with your account; the search term and its catalog
+results stay in the server function's working memory for at most 5 minutes and are then deleted (3.3).</li>
 <li><strong>Data on your device:</strong> until you sign out, delete the demo data or delete the app.</li>
 </ul>
 
@@ -180,7 +203,7 @@ the Hamburg Commissioner for Data Protection and Freedom of Information (HmbBfDI
 
 <section class="lang-block" id="de" lang="de">
 <h1>Datenschutzerklärung</h1>
-<p class="meta">GameChest für iPhone und Android · Stand 24. September 2026</p>
+<p class="meta">GameChest für iPhone und Android · Stand 25. September 2026</p>
 
 <h2>1. Verantwortlicher</h2>
 <p>Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO): Benneth Müller, Benneth Müller Digital Solutions &amp; Education, Borgfelder Str. 16, 20537 Hamburg, Deutschland, <a href="mailto:ben@gamechest.games">ben@gamechest.games</a>.
@@ -198,9 +221,8 @@ Kontakt für alle Datenschutzfragen: <a href="mailto:ben@gamechest.games">ben@ga
 <h3>3.1 Dein Konto</h3>
 <p>Beim Anlegen eines Kontos verarbeiten wir deine <strong>E-Mail-Adresse</strong>, dein <strong>Passwort</strong>
 (bei unserem Hosting-Anbieter nur als Hash gespeichert), eine interne <strong>Benutzer-ID</strong> und den
-<strong>Anzeigenamen</strong>, den du eingibst. Meldest du dich mit Apple, Google oder Twitch an, übermittelt uns
-der Anbieter deine E-Mail-Adresse und, je nach Anbieter und deiner Wahl, deinen Namen; bei „Mit Apple anmelden“
-kannst du deine echte E-Mail-Adresse verbergen. Zweck: Konto anlegen, absichern, anmelden.
+<strong>Anzeigenamen</strong>, den du eingibst. Du meldest dich mit E-Mail-Adresse und Passwort an; eine Anmeldung
+über Apple, Google oder andere Drittanbieter-Konten bietet GameChest nicht an. Zweck: Konto anlegen, absichern, anmelden.
 Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung).</p>
 
 <h3>3.2 Deine Sammlung und dein Profil</h3>
@@ -217,10 +239,14 @@ oder einen Barcode scannst, sendet GameChest diese Eingabe an unsere Serverfunkt
 Einbettungsangaben des geteilten Links und einer Barcode-Produktdatenbank) und liefert Vorschläge zurück. An diese
 Quellen geht nur deine Eingabe, nie dein Name, deine E-Mail-Adresse oder deine Benutzer-ID.
 <strong>Deine Sucheingaben speichern wir nicht in einer Datenbank und nicht zu deinem Konto.</strong> Damit dieselbe
-Suche schneller beantwortet wird, hält die Serverfunktion die Katalogtreffer zu einem Suchbegriff bis zu 5 Minuten in
-ihrem Arbeitsspeicher, abgelegt unter diesem Begriff und ohne Bezug zu einem Konto oder einer Benutzer-ID; danach
-oder beim Neustart der Funktion sind sie weg. Unsere Server-Logs halten nur Art, Dauer und Status der Anfrage fest,
-nie den Suchtext, Link, Text oder Barcode. Erst wenn du ein Spiel speicherst, werden die von dir
+Suche schneller beantwortet wird, hält die Serverfunktion den Suchbegriff (bzw. den aus deinem Link oder Text
+abgeleiteten Titel) zusammen mit den Katalogtreffern höchstens 5 Minuten in ihrem Arbeitsspeicher, ohne Bezug zu einem
+Konto oder einer Benutzer-ID. Abgelaufene Einträge werden automatisch gelöscht, der Speicher fasst nur eine begrenzte
+Zahl aktueller Begriffe, und ein Neustart der Funktion leert ihn vollständig. Unsere Server-Logs halten nur Art, Dauer und Status der Anfrage fest,
+nie den Suchtext, Link, Text oder Barcode. Die Suche hinter der Lupe startet schon beim Tippen (nach einer kurzen
+Pause und ab zwei Zeichen), ein Suchbegriff wird also gesendet, bevor du Enter drückst; ein eingefügter Link wird erst
+gesendet, wenn du ihn bestätigst. Das Suchfeld im Tab Chest filtert nur deine schon gespeicherten Spiele; das geschieht
+auf deinem Gerät und sendet nichts. Erst wenn du ein Spiel speicherst, werden die von dir
 bestätigten Angaben Teil deiner Sammlung (3.2). Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO.</p>
 
 <h3>3.4 Fotos, Kamera und Texterkennung auf dem Gerät</h3>
@@ -241,13 +267,16 @@ angefragten Cover).</p>
 <p>Käufe laufen über Apples App Store oder Google Play und werden dort bezahlt; deine Zahlungsdaten erhalten wir nie. Zum
 Freischalten und Wiederherstellen von Plus nutzen wir <strong>RevenueCat</strong>. RevenueCat erhält deine Kauf- und
 Abo-Informationen (Produkte, Daten, Status, Transaktionsbelege) zusammen mit deiner GameChest-Benutzer-ID bzw. in der
-Demo einer anonymen Kennung. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO. Das Löschen deines GameChest-Kontos
+Demo einer anonymen Kennung. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO. Außerdem werten wir Abos im
+RevenueCat-Dashboard zusammengefasst aus (zum Beispiel Zahl der Abonnenten, Testphasen, Verlängerungen und Umsatz);
+Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO, unser berechtigtes Interesse am Betrieb des Abo-Angebots. Das Löschen deines GameChest-Kontos
 kündigt ein laufendes Abo nicht; kündigen kannst du es im App Store bzw. bei Google Play.</p>
 
 <h3>3.7 Nur auf deinem Gerät gespeicherte Daten</h3>
 <p>GameChest speichert Einstellungen (zum Beispiel Ton und Musik, Tour-Fortschritt), Demo-Daten, aus anderen Apps mit
-GameChest geteilte Funde (bis du sie prüfst oder verwirfst) und nach „Mit Apple anmelden“ einen kurzlebigen
-Autorisierungscode für die Kontolöschung. Nichts davon verlässt dein Gerät, solange du die jeweilige Funktion nicht
+GameChest geteilte Funde (Links, Text oder Screenshots, auf dem iPhone über die Teilen-Erweiterung, auf Android über das
+Teilen-Menü; bis du sie prüfst oder verwirfst, ein geteilter Screenshot wird auf deinem Gerät gelesen und nie
+hochgeladen). Nichts davon verlässt dein Gerät, solange du die jeweilige Funktion nicht
 aktiv nutzt. Die Zwischenablage prüft GameChest nur, während das leere Suchfeld aktiv ist, um „Link einfügen“
 anzubieten. Rechtsgrundlage: § 25 Abs. 2 Nr. 2 TDDDG (unbedingt erforderlich) und Art. 6 Abs. 1 lit. b DSGVO.</p>
 
@@ -262,18 +291,36 @@ Server-Logs, um die Seite auszuliefern und abzusichern (Art. 6 Abs. 1 lit. f DSG
 <h3>3.9 E-Mails</h3>
 <p>Wir senden E-Mails nur zu deinem Konto (Bestätigung, Passwort zurücksetzen). Keine Newsletter.</p>
 
+<h3>3.10 Till, der Spieleberater (KI)</h3>
+<p>Till beantwortet deine Fragen mit Hilfe des KI-Modells <strong>Gemini</strong> von <strong>Google</strong>
+(Gemini API; Vertragspartner Google Cloud EMEA Limited, Irland; die Verarbeitung kann auch bei Google in den USA und
+anderen Ländern stattfinden). Erst nachdem du im Chat zugestimmt hast, übermitteln wir über unseren Server deine
+Nachricht, die letzten Nachrichten des laufenden Gesprächs, Titel, Plattform und Status der Spiele in deiner Truhe
+sowie Plattformen und Genres aus deinem Profil an Google, zusammen mit Spieldaten aus dem IGDB-Katalog. Name,
+E-Mail-Adresse, Notizen und Bewertungen senden wir nicht. Wir nutzen die kostenpflichtige Gemini API: Nach den
+Gemini-API-Bedingungen für kostenpflichtige Dienste nutzt Google diese Anfragen und Antworten nicht zur Verbesserung
+seiner Produkte (auch nicht zum Training seiner Modelle), verarbeitet sie als unser Auftragsverarbeiter nach dem
+Google-Cloud-Auftragsverarbeitungszusatz und speichert sie nur begrenzte Zeit, um Missbrauch seiner Dienste zu
+erkennen. Für das tägliche Antwortkontingent speichern wir je Tag einen Zähler (Benutzer-ID, Datum, Anzahl); ein
+täglicher Job löscht Zähler, die älter als 31 Tage sind. Das Gespräch selbst speichern wir nicht auf unseren Servern.
+Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (deine Einwilligung im Chat) und Art. 6 Abs. 1 lit. b DSGVO. Deine
+Einwilligung kannst du jederzeit mit Wirkung für die Zukunft widerrufen (Art. 7 Abs. 3 DSGVO): in der App unter
+Settings → AI advisor (Till): Consent → Withdraw consent. Danach wird nichts mehr an Google übermittelt, und Till fragt
+beim nächsten Öffnen erneut. Die Rechtmäßigkeit der Verarbeitung bis zum Widerruf bleibt unberührt. In der Demo
+antwortet Till ohne KI auf deinem Gerät.</p>
+
 <h2>4. Dienstleister und Empfänger</h2>
 <div class="scroll"><table>
 <tr><th>Empfänger</th><th>Rolle</th><th>Daten</th></tr>
 <tr><td>Supabase, Inc. (Server in der EU, AWS-Region eu-west-1, Irland)</td><td>Auftragsverarbeiter: Hosting, Datenbank, Anmeldung, Serverfunktionen, Konto-E-Mails</td><td>Konto, Sammlung, Profil, Server-Logs</td></tr>
 <tr><td>RevenueCat, Inc. (USA)</td><td>Auftragsverarbeiter: Abo-Verwaltung</td><td>Benutzer-ID, Kauf- und Abodaten</td></tr>
-<tr><td>Apple (Apple Inc. / Apple Distribution International Ltd.)</td><td>App-Store-Zahlung und „Mit Apple anmelden“ nach Apples eigener Datenschutzrichtlinie</td><td>Kauf- und Anmeldedaten</td></tr>
-<tr><td>Google (Google LLC / Google Ireland Ltd.)</td><td>ML-Kit-Messwerte (3.4); Google-Play-Zahlungen unter Android; Google-Anmeldung, falls du sie wählst</td><td>Technische Messwerte; Kaufdaten unter Android; Anmeldedaten</td></tr>
-<tr><td>Twitch Interactive, Inc.</td><td>Twitch-Anmeldung, falls du sie wählst</td><td>Anmeldedaten</td></tr>
+<tr><td>Google Cloud EMEA Limited (Irland) / Google LLC (USA), Gemini API</td><td>Auftragsverarbeiter: KI-Antworten für Till (3.10), nur nach deiner Einwilligung</td><td>Chat-Nachrichten, Titel/Plattform/Status der Truhenspiele, Profil-Plattformen und -Genres</td></tr>
+<tr><td>Apple (Apple Inc. / Apple Distribution International Ltd.)</td><td>App-Store-Zahlung nach Apples eigener Datenschutzrichtlinie</td><td>Kaufdaten</td></tr>
+<tr><td>Google (Google LLC / Google Ireland Ltd.)</td><td>ML-Kit-Messwerte (3.4); Google-Play-Zahlungen unter Android</td><td>Technische Messwerte; Kaufdaten unter Android</td></tr>
 <tr><td>Öffentliche Spielekataloge, Link- und Barcode-Quellen</td><td>erhalten deine Sucheingabe ohne deine Identität (3.3); Bildserver erhalten deine IP-Adresse (3.5)</td><td>Sucheingabe; IP-Adresse</td></tr>
 </table></div>
 <p>Soweit Daten in Länder außerhalb der EU/des EWR (insbesondere die USA) übermittelt werden, geschieht das auf
-Grundlage von des EU-US Data Privacy Framework, soweit der Empfänger danach zertifiziert ist, und im Übrigen der EU-Standardvertragsklauseln (Art. 46 Abs. 2 lit. c DSGVO).
+Grundlage des EU-US Data Privacy Framework, soweit der Empfänger danach zertifiziert ist, und im Übrigen der EU-Standardvertragsklauseln (Art. 46 Abs. 2 lit. c DSGVO).
 Wir verpflichten unsere Auftragsverarbeiter, deine Daten mindestens so zu schützen, wie es diese Erklärung
 beschreibt.</p>
 
@@ -281,14 +328,16 @@ beschreibt.</p>
 <ul>
 <li><strong>Konto, Sammlung und Profil:</strong> bis du dein Konto löschst. Die Löschung in der App entfernt Profil,
 Sammlung und Anmeldekonto sofort von unseren Servern; sie lässt sich nicht rückgängig machen.</li>
-<li><strong>„Mit Apple anmelden“:</strong> Beim Löschen bitten wir Apple, den Zugriff von GameChest zu widerrufen. Lässt
-sich das nicht bestätigen, zeigt dir die App, wie du GameChest in den Einstellungen deines Apple Accounts entfernst.</li>
-<li><strong>Abo-Daten bei RevenueCat:</strong> das Löschen deines Kontos in der App löscht sie nicht. RevenueCat
-bewahrt deine GameChest-Benutzer-ID mit deinem Kauf- und Abo-Verlauf auf, bis wir diesen Kundendatensatz löschen.
-Schreib uns, dann löschen wir ihn bei RevenueCat. Apple und Google bewahren eigene Kaufbelege nach eigenen Regeln
-auf.</li>
-<li><strong>Sucheingaben:</strong> nicht in einer Datenbank und nicht zu deinem Konto gespeichert; Katalogtreffer zu
-einem Suchbegriff bleiben bis zu 5 Minuten im Arbeitsspeicher der Serverfunktion (3.3).</li>
+<li><strong>Abo-Daten bei RevenueCat:</strong> Wenn du dein Konto in der App löschst, bittet unser Server RevenueCat,
+deinen Kundendatensatz dort zu löschen (deine GameChest-Benutzer-ID mit Kauf- und Abo-Verlauf). Das klappt nur, wenn
+unser Server den dafür nötigen RevenueCat-Zugangsschlüssel hat und RevenueCat antwortet. Wird die Anfrage nicht
+gestellt oder schlägt sie fehl, wird dein Konto trotzdem gelöscht, der Datensatz bleibt aber bei RevenueCat, bis wir
+ihn dort von Hand löschen; schreib uns, dann tun wir das innerhalb von 30 Tagen. Das Löschen des Kontos kündigt ein laufendes Abo nicht (3.6). Apple und Google bewahren eigene
+Kaufbelege nach eigenen Regeln auf.</li>
+<li><strong>Tills Tageszähler:</strong> ein täglicher Job löscht ihn, sobald er älter als 31 Tage ist, und sofort,
+wenn du dein Konto löschst (3.10).</li>
+<li><strong>Sucheingaben:</strong> nicht in einer Datenbank und nicht zu deinem Konto gespeichert; Suchbegriff und
+Katalogtreffer bleiben höchstens 5 Minuten im Arbeitsspeicher der Serverfunktion und werden dann gelöscht (3.3).</li>
 <li><strong>Daten auf deinem Gerät:</strong> bis du dich abmeldest, die Demo-Daten löschst oder die App löschst.</li>
 </ul>
 
