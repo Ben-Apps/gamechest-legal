@@ -54,7 +54,7 @@ summary{cursor:pointer;font-weight:700;color:var(--off)}
 
 <section class="lang-block" id="en" lang="en">
 <h1>Privacy Policy</h1>
-<p class="meta">GameChest for iPhone, Android and the web · Last updated September 25, 2026</p>
+<p class="meta">GameChest for iPhone, Android and the web · Last updated September 26, 2026</p>
 
 <h2>1. Who is responsible</h2>
 <p>Controller within the meaning of the EU General Data Protection Regulation (GDPR): Benneth Müller, Benneth Müller Digital Solutions &amp; Education, Borgfelder Str. 16, 20537 Hamburg, Germany, <a href="mailto:ben@gamechest.games">ben@gamechest.games</a>.
@@ -78,8 +78,9 @@ Legal basis: Art. 6(1)(b) GDPR (performance of the contract).</p>
 
 <h3>3.2 Your collection and profile</h3>
 <p>We store what you save in GameChest: game titles, platform, genre, status, star rating, <strong>notes</strong>,
-the <strong>link or source</strong> where you found a game, a scanned barcode, catalog references and cover
-image addresses, the date you saved an entry, your favourite genres, platforms and discovery sources, language,
+the <strong>link or source</strong> where you found a game (without tracking parameters such as <code>utm_</code>
+codes), for a shared post its title, author or channel name and preview image address, a scanned barcode, catalog
+references and cover image addresses, the date you saved an entry, your favourite genres, platforms and discovery sources, language,
 your room layout, your chosen companion and your showcase. Only you can read and change these entries.
 Purpose: providing the app. Legal basis: Art. 6(1)(b) GDPR.</p>
 
@@ -112,6 +113,9 @@ If you do not use the photo or scan features, no images are processed.</p>
 <p>Game covers are loaded by your device directly from the image servers of the game catalogs. Like any web
 request, this transmits your IP address to those servers. Legal basis: Art. 6(1)(f) GDPR (showing the covers you
 asked for).</p>
+<p>The same applies to the <strong>preview image of a shared post</strong> (for example from Reddit, TikTok, Instagram,
+YouTube, X or Twitch): your device loads it directly from that platform's image server, and only while the source
+card is on screen. We do not upload the image and do not pass it on to anyone else.</p>
 
 <h3>3.6 GameChest Plus subscription</h3>
 <p>Purchases are made and paid through Apple's App Store or Google Play; we never receive your payment details. To unlock Plus
@@ -138,7 +142,10 @@ up to 7 days, after which the logs are deleted automatically. The website gamech
 and secure the site (Art. 6(1)(f) GDPR).</p>
 
 <h3>3.9 Emails</h3>
-<p>We send emails only for your account (confirmation, password reset). No newsletters.</p>
+<p>We send emails only for your account (confirmation, password reset). No newsletters. Our sign-in service at
+Supabase creates these emails; they are delivered through the SMTP mail server of <strong>Hostinger International
+Ltd.</strong>, which receives your email address and the content of the email (for example the confirmation link) to
+deliver it. Legal basis: Art. 6(1)(b) GDPR.</p>
 
 <h3>3.10 Till, the game advisor (AI)</h3>
 <p>Till is an AI, not a person. He answers with the AI model <strong>Claude</strong> from <strong>Anthropic</strong>
@@ -181,6 +188,7 @@ transmits your IP address to Google; legal basis: Art. 6(1)(f) GDPR (displaying 
 <div class="scroll"><table>
 <tr><th>Recipient</th><th>Role</th><th>Data</th></tr>
 <tr><td>Supabase, Inc. (servers in the EU, AWS region eu-west-1, Ireland)</td><td>Processor: hosting, database, sign-in, server functions, account emails</td><td>Account, collection, profile, server logs</td></tr>
+<tr><td>Hostinger International Ltd. (Cyprus, EU)</td><td>Processor: delivery of account emails via SMTP (3.9)</td><td>Email address, email content</td></tr>
 <tr><td>RevenueCat, Inc. (USA)</td><td>Processor: subscription management</td><td>User ID, purchase and subscription data</td></tr>
 <tr><td>Anthropic Ireland, Limited (Ireland) / Anthropic, PBC (USA), Claude API</td><td>Processor: AI answers for Till (3.10), only after your consent</td><td>Chat messages, chest titles/platforms/statuses, profile platforms and genres</td></tr>
 <tr><td>Apple (Apple Inc. / Apple Distribution International Ltd.)</td><td>App Store payments under Apple's own privacy policy</td><td>Purchase data</td></tr>
@@ -199,9 +207,10 @@ We require our processors to protect your data at least to the standard describe
 your profile, your collection and your sign-in account from our servers immediately; it cannot be undone.</li>
 <li><strong>Subscription records at RevenueCat:</strong> when you delete your account in the app, our server asks
 RevenueCat to delete your RevenueCat customer record (your GameChest user ID with its purchase and subscription
-history). This only works when our server holds the RevenueCat access key needed for it and RevenueCat answers. If the
-request is not made or fails, your account is still deleted, but the record stays at RevenueCat until we delete it
-there by hand; write to us and we will do so within 30 days. Deleting the account does not cancel a running subscription (3.6). Apple and Google keep their
+history). If the request is not made or fails, your account is still deleted, and our server notes the open
+request (only your GameChest user ID) and repeats it automatically every 6 hours for up to 7 days. The note is
+removed 30 days after RevenueCat confirmed the deletion. If the record still cannot be deleted automatically, we
+delete it at RevenueCat by hand; you can also write to us and we will do so within 30 days. Deleting the account does not cancel a running subscription (3.6). Apple and Google keep their
 own purchase records under their own policies.</li>
 <li><strong>Till's daily answer counter:</strong> deleted by a daily job once it is older than 31 days, and
 immediately when you delete your account (3.10).</li>
@@ -231,7 +240,7 @@ applicable child-protection law; Anthropic's child-safety requirements for produ
 
 <section class="lang-block" id="de" lang="de">
 <h1>Datenschutzerklärung</h1>
-<p class="meta">GameChest für iPhone, Android und das Web · Stand 25. September 2026</p>
+<p class="meta">GameChest für iPhone, Android und das Web · Stand 26. September 2026</p>
 
 <h2>1. Verantwortlicher</h2>
 <p>Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO): Benneth Müller, Benneth Müller Digital Solutions &amp; Education, Borgfelder Str. 16, 20537 Hamburg, Deutschland, <a href="mailto:ben@gamechest.games">ben@gamechest.games</a>.
@@ -255,8 +264,9 @@ Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung).</p>
 
 <h3>3.2 Deine Sammlung und dein Profil</h3>
 <p>Wir speichern, was du in GameChest sicherst: Spieltitel, Plattform, Genre, Status, Sternebewertung,
-<strong>Notizen</strong>, den <strong>Link bzw. die Quelle</strong>, wo du ein Spiel gefunden hast, einen
-gescannten Barcode, Katalogverweise und Cover-Adressen, das Speicherdatum, deine Lieblingsgenres, Plattformen und
+<strong>Notizen</strong>, den <strong>Link bzw. die Quelle</strong>, wo du ein Spiel gefunden hast (ohne
+Tracking-Parameter wie <code>utm_</code>-Kennungen), bei einem geteilten Beitrag dessen Titel, Autor- bzw. Kanalnamen
+und die Adresse des Vorschaubilds, einen gescannten Barcode, Katalogverweise und Cover-Adressen, das Speicherdatum, deine Lieblingsgenres, Plattformen und
 Entdeckungsquellen, die Sprache, dein Raumlayout, deinen gewählten Begleiter und deine Vitrine. Nur du kannst diese
 Einträge lesen und ändern. Zweck: Bereitstellung der App. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO.</p>
 
@@ -290,6 +300,9 @@ nicht, werden keine Bilder verarbeitet.</p>
 <p>Spiele-Cover lädt dein Gerät direkt von den Bildservern der Spielekataloge. Wie bei jedem Webabruf wird dabei
 deine IP-Adresse an diese Server übermittelt. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (Anzeige der
 angefragten Cover).</p>
+<p>Dasselbe gilt für das <strong>Vorschaubild eines geteilten Beitrags</strong> (etwa von Reddit, TikTok, Instagram,
+YouTube, X oder Twitch): Dein Gerät lädt es direkt vom Bildserver dieser Plattform, und nur, solange die Quellen-Karte
+angezeigt wird. Wir laden das Bild nicht hoch und geben es an niemanden weiter.</p>
 
 <h3>3.6 Abo GameChest Plus</h3>
 <p>Käufe laufen über Apples App Store oder Google Play und werden dort bezahlt; deine Zahlungsdaten erhalten wir nie. Zum
@@ -317,7 +330,10 @@ bis zu 7 Tage; danach werden die Protokolle automatisch gelöscht. Die Website g
 Server-Logs, um die Seite auszuliefern und abzusichern (Art. 6 Abs. 1 lit. f DSGVO).</p>
 
 <h3>3.9 E-Mails</h3>
-<p>Wir senden E-Mails nur zu deinem Konto (Bestätigung, Passwort zurücksetzen). Keine Newsletter.</p>
+<p>Wir senden E-Mails nur zu deinem Konto (Bestätigung, Passwort zurücksetzen). Keine Newsletter. Unser
+Anmeldedienst bei Supabase erstellt diese E-Mails; zugestellt werden sie über den SMTP-Mailserver der <strong>Hostinger
+International Ltd.</strong>, die dafür deine E-Mail-Adresse und den Inhalt der E-Mail (zum Beispiel den
+Bestätigungslink) erhält. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO.</p>
 
 <h3>3.10 Till, der Spieleberater (KI)</h3>
 <p>Till ist eine KI, kein Mensch. Er antwortet mit dem KI-Modell <strong>Claude</strong> von <strong>Anthropic</strong>
@@ -365,6 +381,7 @@ Abs. 1 lit. f DSGVO (korrekte Darstellung von Text).</p>
 <div class="scroll"><table>
 <tr><th>Empfänger</th><th>Rolle</th><th>Daten</th></tr>
 <tr><td>Supabase, Inc. (Server in der EU, AWS-Region eu-west-1, Irland)</td><td>Auftragsverarbeiter: Hosting, Datenbank, Anmeldung, Serverfunktionen, Konto-E-Mails</td><td>Konto, Sammlung, Profil, Server-Logs</td></tr>
+<tr><td>Hostinger International Ltd. (Zypern, EU)</td><td>Auftragsverarbeiter: Zustellung der Konto-E-Mails per SMTP (3.9)</td><td>E-Mail-Adresse, Inhalt der E-Mail</td></tr>
 <tr><td>RevenueCat, Inc. (USA)</td><td>Auftragsverarbeiter: Abo-Verwaltung</td><td>Benutzer-ID, Kauf- und Abodaten</td></tr>
 <tr><td>Anthropic Ireland, Limited (Irland) / Anthropic, PBC (USA), Claude API</td><td>Auftragsverarbeiter: KI-Antworten für Till (3.10), nur nach deiner Einwilligung</td><td>Chat-Nachrichten, Titel/Plattform/Status der Truhenspiele, Profil-Plattformen und -Genres</td></tr>
 <tr><td>Apple (Apple Inc. / Apple Distribution International Ltd.)</td><td>App-Store-Zahlung nach Apples eigener Datenschutzrichtlinie</td><td>Kaufdaten</td></tr>
@@ -383,10 +400,11 @@ beschreibt.</p>
 <li><strong>Konto, Sammlung und Profil:</strong> bis du dein Konto löschst. Die Löschung in der App entfernt Profil,
 Sammlung und Anmeldekonto sofort von unseren Servern; sie lässt sich nicht rückgängig machen.</li>
 <li><strong>Abo-Daten bei RevenueCat:</strong> Wenn du dein Konto in der App löschst, bittet unser Server RevenueCat,
-deinen Kundendatensatz dort zu löschen (deine GameChest-Benutzer-ID mit Kauf- und Abo-Verlauf). Das klappt nur, wenn
-unser Server den dafür nötigen RevenueCat-Zugangsschlüssel hat und RevenueCat antwortet. Wird die Anfrage nicht
-gestellt oder schlägt sie fehl, wird dein Konto trotzdem gelöscht, der Datensatz bleibt aber bei RevenueCat, bis wir
-ihn dort von Hand löschen; schreib uns, dann tun wir das innerhalb von 30 Tagen. Das Löschen des Kontos kündigt ein laufendes Abo nicht (3.6). Apple und Google bewahren eigene
+deinen Kundendatensatz dort zu löschen (deine GameChest-Benutzer-ID mit Kauf- und Abo-Verlauf). Wird die Anfrage nicht
+gestellt oder schlägt sie fehl, wird dein Konto trotzdem gelöscht; unser Server merkt sich die offene Anfrage (nur
+deine GameChest-Benutzer-ID) und wiederholt sie automatisch alle 6 Stunden, höchstens 7 Tage lang. Der Vermerk wird
+30 Tage nach der bestätigten Löschung bei RevenueCat entfernt. Lässt sich der Datensatz auch so nicht löschen,
+löschen wir ihn bei RevenueCat von Hand; du kannst uns auch schreiben, dann tun wir das innerhalb von 30 Tagen. Das Löschen des Kontos kündigt ein laufendes Abo nicht (3.6). Apple und Google bewahren eigene
 Kaufbelege nach eigenen Regeln auf.</li>
 <li><strong>Tills Tageszähler:</strong> ein täglicher Job löscht ihn, sobald er älter als 31 Tage ist, und sofort,
 wenn du dein Konto löschst (3.10).</li>
